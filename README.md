@@ -5,6 +5,7 @@
 Une address ip ici est donc une suite de 4octets (32bits) permetant d'identifier un appareil dans un réseaux privée ou publique. 
 Chaque ip doit être unique dans son réseau pour pouvoir communiquer avec ses paires.
 
+### Exemple
 ```
 128.64.12.236
 10000000.01000000.00001011.11101100
