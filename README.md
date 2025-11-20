@@ -75,3 +75,8 @@ Avec ce chiffre et l’adresse du réseau, il suffit d’ajouter 32 au dernier o
 
 Les adresses utilisables sont donc :
 - 192.12.102.161 à 192.12.102.190 inclus
+
+## Les Switchs
+
+Un switch est un périphérique permetant de connecter plusieurs postes/servers dans un même réseau.
+Il permet d'evier les collisions de packet (par exemple si un appareil tente de communiquer avec un autre alors que celui-ci est deja en communication). Un switch memorise quel port est connecté a quel port. Ce qui evite d'envoyer les packet dans des ports inutile et reduis les risque de colision.
