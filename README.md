@@ -1,7 +1,17 @@
 # NetPractice
 
-## Qu'est-ce qu'une adresse (IPV4) ?
+## Un réseau ?
+Ici, nous parlons de réseaux TCP/IP, c’est-à-dire un ensemble de périphériques et serveurs interconnectés.
 
+## Un sous-réseau ?
+Un **sous-réseau** est une partie plus interne d’un réseau plus global.
+Il permet notamment de **restreindre la portée de communication de certains périphériques** et de **protéger certains secteurs d’un réseau global.**
+Internet, par exemple, est un énorme réseau composé d’un très grand ensemble de sous-réseaux.
+
+Un sous-réseau peut lui aussi contenir plusieurs sous-réseaux.
+Ceci est rendu possible grâce au **masque de sous-réseau.**
+
+## Qu'est-ce qu'une adresse IP (IPV4) ?
 Une adresse IP est une suite de 4 octets (32 bits) permettant d’identifier un appareil dans un réseau privé ou public.
 Chaque IP doit être unique dans son réseau pour pouvoir communiquer avec ses pairs.
 
@@ -11,7 +21,6 @@ Chaque IP doit être unique dans son réseau pour pouvoir communiquer avec ses p
 10000000 01000000 00001011 11101100
 ```
 ## L'adresse 127.0.0.1
-
 Certaines adresses ne peuvent pas être attribuées à un périphérique, car leur usage est déjà réservé.
 
 ```
@@ -24,7 +33,6 @@ Localhost / loopback
 Ainsi, toutes les IP de la plage 127.0.0.0 à 127.255.255.255 ne sont pas attribuables à un périphérique.
 
 ## Masque de sous réseaux
-
 Un masque est une suite de 4 octets permettant de définir une plage réseau, c’est-à-dire le nombre de périphériques possibles dans un même sous-réseau.
 Le masque se divise en deux parties : la partie réseau et la partie hôte.
 
@@ -77,7 +85,6 @@ Les adresses utilisables sont donc :
 - 192.12.102.161 à 192.12.102.190 inclus
 
 ## Les Switchs
-
 Avant de comprendre l’intérêt d’un switch, il faut savoir comment les réseaux fonctionnaient auparavant. Pour connecter plusieurs périphériques entre eux, nous utilisions des hubs. Les hubs se contentent de **partager les paquets reçus d’un hôte à tous les autres hôtes connectés**. Cela pouvait provoquer des **collisions de paquets** (par exemple, si deux hôtes souhaitaient communiquer avec une même destination), ce qui pouvait entraîner des **pertes de données**.
 
 Un switch, quant à lui, est un périphérique permettant également de connecter plusieurs postes ou serveurs dans un même réseau.
