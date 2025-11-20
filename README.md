@@ -95,9 +95,10 @@ Avant de comprendre l’intérêt d’un switch, il faut savoir comment les rés
 
 Un switch, quant à lui, est un périphérique permettant également de connecter plusieurs postes ou serveurs dans un même réseau.
 Il permet d’éviter les collisions de paquets en **mémorisant quel périphérique est connecté à quel port**. Cela évite d’envoyer des paquets vers des ports inutiles et réduit les risques de collisions.
-Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque.
+Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque. 
 
-Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
+Un switch retiens les adresses MAC connecté à ses ports et les utilisent pour savoir précisement quel est la source et quel est la destination. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/)
+Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau. 
 
 <img width="593" height="285" alt="nsi_prem_introReseau_4-3919421320" src="https://github.com/user-attachments/assets/30d93616-e416-47e5-b43a-a76af57d2346" />
 
