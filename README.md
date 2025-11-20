@@ -70,19 +70,25 @@ C’est ça, la plage !
 Dans un même réseau, les IP doivent appartenir à une même plage pour communiquer. Il est simple de connaître la taille d’une plage lorsqu’un ou plusieurs octets complets sont attribués à la partie hôte.
 Mais les choses se corsent lorsque la partie hôte commence au milieu d’un octet.
 ```
-192.12.102.160 # adresse du réseau
+192.12.102.161 # adresse du réseau
 255.255.255.224 # masque
 ```
 Ici, la plage paraît complexe à déterminer. Nous serions tentés de nous pencher directement sur le binaire, mais une solution plus simple existe !
 
-Il suffit de soustraire l’octet du masque (224) à 255, ce qui nous donne 31.
-Avec ce chiffre et l’adresse du réseau, il suffit d’ajouter 31 au dernier octet (160), puis de retirer 1 pour obtenir la dernière adresse utilisable.
-
-- 160 = adresse réseau
-- 160 + 31 = 191 = broadcast
+Il suffit de soustraire l’octet du masque (224) à 256(le nombre de valeur possible dans un octet), ce qui nous donne 32.
+```
+256 - 224 = 32 # plage
+```
+Maintenant il faudrait trouver quel à quel plage appartient 160. Pour ce faire il suffit de soustraire la plage à 256 jusque trouver la plage correspondante.
+```
+256 - 32 = 224
+224 - 32 = 192
+192 - 32 = 160 # Voici la plage de notre réseau !
+```
+la plage de notre réseau est donc entre 190 à 223 inclu ! Il ne reste plus qu'a retirer l'adresse du reseau et celle du broadcast.
 
 Les adresses utilisables sont donc :
-- 192.12.102.161 à 192.12.102.190 inclus
+- 192.12.102.192 à 192.12.102.122 inclus
 
 ## Les Switchs
 Avant de comprendre l’intérêt d’un switch, il faut savoir comment les réseaux fonctionnaient auparavant. Pour connecter plusieurs périphériques entre eux, nous utilisions des hubs. Les hubs se contentent de **partager les paquets reçus d’un hôte à tous les autres hôtes connectés**. Cela pouvait provoquer des **collisions de paquets** (par exemple, si deux hôtes souhaitaient communiquer avec une même destination), ce qui pouvait entraîner des **pertes de données**.
