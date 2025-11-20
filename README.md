@@ -31,8 +31,8 @@ Le masque se divise en deux parties : la partie réseau et la partie hôte.
 Pour comprendre cela, il faut se pencher sur le binaire :
 Pour comprendre cette partie il faudra se pencher sur le binaire.
 
-- la partie réseau est constituée de 1
-- la partie hôte est constituée de 0
+- **la partie réseau** → bits à 1
+- **la partie hôte** → bits à 0
 
 ### Exemple
 ```
@@ -41,10 +41,10 @@ Pour comprendre cette partie il faudra se pencher sur le binaire.
 ```
 Ici, les trois premiers octets sont attribués au réseau, tandis que les bits à 0 représentent la plage, c’est-à-dire le nombre de périphériques possibles dans ce même réseau.
 
-À savoir :
+À retenir :
 
-- la première adresse d’un réseau (celle où tous les bits hôtes sont à 0) est réservée pour représenter le réseau lui-même ;
-- la dernière adresse (tous les bits hôtes à 1) est réservée au broadcast, c’est-à-dire à la diffusion vers tous les périphériques du réseau.
+- La **première adresse** (tous les bits hôtes à 0) représente le réseau.
+- La **dernière adresse** (tous les bits hôtes à 1) est l’adresse de broadcast.
 
 ### Exemple
 ```
