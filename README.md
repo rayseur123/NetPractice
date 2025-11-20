@@ -31,8 +31,8 @@ Le masque se divise en deux parties : la partie réseau et la partie hôte.
 Pour comprendre cela, il faut se pencher sur le binaire :
 Pour comprendre cette partie il faudra se pencher sur le binaire.
 
--la partie réseau est constituée de 1
--la partie hôte est constituée de 0
+- la partie réseau est constituée de 1
+- la partie hôte est constituée de 0
 
 ### Exemple
 ```
