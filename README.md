@@ -97,7 +97,7 @@ Un switch, quant à lui, est un périphérique permettant également de connecte
 Il permet d’éviter les collisions de paquets en **mémorisant quel périphérique est connecté à quel port**. Cela évite d’envoyer des paquets vers des ports inutiles et réduit les risques de collisions.
 Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque.
 
-Un switch permet donc de connecter plusieurs hôtes d'un **même réseau**.
+Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 
 <img width="593" height="285" alt="nsi_prem_introReseau_4-3919421320" src="https://github.com/user-attachments/assets/30d93616-e416-47e5-b43a-a76af57d2346" />
 
