@@ -104,3 +104,4 @@ Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 <img width="593" height="285" alt="nsi_prem_introReseau_4-3919421320" src="https://github.com/user-attachments/assets/30d93616-e416-47e5-b43a-a76af57d2346" />
 
 ## routeur
+Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de transferer les packets en calculant le trajet optimal.
