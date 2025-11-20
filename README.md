@@ -43,8 +43,8 @@ Ici, les trois premiers octets sont attribués au réseau, tandis que les bits �
 
 À savoir :
 
--la première adresse d’un réseau (celle où tous les bits hôtes sont à 0) est réservée pour représenter le réseau lui-même ;
--la dernière adresse (tous les bits hôtes à 1) est réservée au broadcast, c’est-à-dire à la diffusion vers tous les périphériques du réseau.
+- la première adresse d’un réseau (celle où tous les bits hôtes sont à 0) est réservée pour représenter le réseau lui-même ;
+- la dernière adresse (tous les bits hôtes à 1) est réservée au broadcast, c’est-à-dire à la diffusion vers tous les périphériques du réseau.
 
 ### Exemple
 ```
@@ -69,9 +69,9 @@ Ici, la plage paraît complexe à déterminer. Nous serions tentés de nous penc
 Il suffit de soustraire l’octet du masque (224) à 255, ce qui nous donne 32.
 Avec ce chiffre et l’adresse du réseau, il suffit d’ajouter 32 au dernier octet (160), puis de retirer 1 pour obtenir la dernière adresse utilisable.
 
--160 = adresse réseau
--160 + 32 = 192 = début de la plage suivante
--192 − 1 = 191 = broadcast
+- 160 = adresse réseau
+- 160 + 32 = 192 = début de la plage suivante
+- 192 − 1 = 191 = broadcast
 
 Les adresses utilisables sont donc :
--192.12.102.161 à 192.12.102.190 inclus
+- 192.12.102.161 à 192.12.102.190 inclus
