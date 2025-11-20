@@ -86,4 +86,6 @@ Si deux hôtes cherchent à communiquer avec une même destination, le switch ut
 
 Un switch permet donc de connecter plusieurs hôtes d'un **même réseau**.
 
+<img width="969" height="871" alt="Screenshot from 2025-11-20 14-44-27" src="https://github.com/user-attachments/assets/c144ab3a-dcfa-4b3c-9255-9def5e077784" />
+
 ## routeur
