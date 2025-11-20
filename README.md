@@ -62,7 +62,7 @@ C’est ça, la plage !
 Dans un même réseau, les IP doivent appartenir à une même plage pour communiquer. Il est simple de connaître la taille d’une plage lorsqu’un ou plusieurs octets complets sont attribués à la partie hôte.
 Mais les choses se corsent lorsque la partie hôte commence au milieu d’un octet.
 ```
-192.12.102.160 # adresse du reseau
+192.12.102.160 # adresse du réseau
 255.255.255.224 # masque
 ```
 Ici, la plage paraît complexe à déterminer. Nous serions tentés de nous pencher directement sur le binaire, mais une solution plus simple existe !
@@ -84,6 +84,6 @@ Un switch, quant à lui, est un périphérique permettant également de connecte
 Il permet d’éviter les collisions de paquets en **mémorisant quel périphérique est connecté à quel port**. Cela évite d’envoyer des paquets vers des ports inutiles et réduit les risques de collisions.
 Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque.
 
-Un switch permet donc de connecter plusieurs hotes d'un **meme reseau**.
+Un switch permet donc de connecter plusieurs hôtes d'un **même réseau**.
 
 ## routeur
