@@ -78,5 +78,12 @@ Les adresses utilisables sont donc :
 
 ## Les Switchs
 
-Un switch est un périphérique permétant de connecter plusieurs postes/servers dans un même réseau.
-Il permet d'éviter les collisions de packets (par exemple si un appareil tente de communiquer avec un autre alors que celui-ci est déja en communication). Un switch mémorise quel périphéroque est connecté à quel port. Ce qui évite d'envoyer les packet dans des ports inutile et réduis les risques de colisions.
+Avant de comprendre l’intérêt d’un switch, il faut savoir comment les réseaux fonctionnaient auparavant. Pour connecter plusieurs périphériques entre eux, nous utilisions des hubs. Les hubs se contentent de **partager les paquets reçus d’un hôte à tous les autres hôtes connectés**. Cela pouvait provoquer des **collisions de paquets** (par exemple, si deux hôtes souhaitaient communiquer avec une même destination), ce qui pouvait entraîner des **pertes de données**.
+
+Un switch, quant à lui, est un périphérique permettant également de connecter plusieurs postes ou serveurs dans un même réseau.
+Il permet d’éviter les collisions de paquets en **mémorisant quel périphérique est connecté à quel port**. Cela évite d’envoyer des paquets vers des ports inutiles et réduit les risques de collisions.
+Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque.
+
+Un switch permet donc de connecter plusieurs hotes d'un **meme reseau**.
+
+## routeur
