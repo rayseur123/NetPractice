@@ -85,7 +85,7 @@ Maintenant il faudrait trouver quel à quel plage appartient 160. Pour ce faire 
 224 - 32 = 192
 192 - 32 = 160 # Voici la plage de notre réseau !
 ```
-la plage de notre réseau est donc entre 190 à 223 inclu ! Il ne reste plus qu'a retirer l'adresse du reseau et celle du broadcast.
+La plage de notre réseau est donc entre 190 à 223 inclu ! Il ne reste plus qu'a retirer l'adresse du reseau et celle du broadcast.
 
 Les adresses utilisables sont donc :
 - 192.12.102.192 à 192.12.102.122 inclus
