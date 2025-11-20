@@ -46,6 +46,8 @@ Ici, les trois premiers octets sont attribués au réseau, tandis que les bits �
 - La **première adresse** (tous les bits hôtes à 0) représente le réseau.
 - La **dernière adresse** (tous les bits hôtes à 1) est l’adresse de broadcast.
 
+Le **broadcast** permet de communiquer avec tous les périphérique du réseau.
+
 ### Exemple
 ```
 192.12.102.0 # adresse du reseau 
@@ -59,24 +61,22 @@ C’est ça, la plage !
 
 Dans un même réseau, les IP doivent appartenir à une même plage pour communiquer. Il est simple de connaître la taille d’une plage lorsqu’un ou plusieurs octets complets sont attribués à la partie hôte.
 Mais les choses se corsent lorsque la partie hôte commence au milieu d’un octet.
-
 ```
 192.12.102.160 # adresse du reseau
 255.255.255.224 # masque
 ```
 Ici, la plage paraît complexe à déterminer. Nous serions tentés de nous pencher directement sur le binaire, mais une solution plus simple existe !
 
-Il suffit de soustraire l’octet du masque (224) à 255, ce qui nous donne 32.
-Avec ce chiffre et l’adresse du réseau, il suffit d’ajouter 32 au dernier octet (160), puis de retirer 1 pour obtenir la dernière adresse utilisable.
+Il suffit de soustraire l’octet du masque (224) à 255, ce qui nous donne 31.
+Avec ce chiffre et l’adresse du réseau, il suffit d’ajouter 31 au dernier octet (160), puis de retirer 1 pour obtenir la dernière adresse utilisable.
 
 - 160 = adresse réseau
-- 160 + 32 = 192 = début de la plage suivante
-- 192 − 1 = 191 = broadcast
+- 160 + 31 = 191 = broadcast
 
 Les adresses utilisables sont donc :
 - 192.12.102.161 à 192.12.102.190 inclus
 
 ## Les Switchs
 
-Un switch est un périphérique permetant de connecter plusieurs postes/servers dans un même réseau.
-Il permet d'evier les collisions de packet (par exemple si un appareil tente de communiquer avec un autre alors que celui-ci est deja en communication). Un switch memorise quel port est connecté a quel port. Ce qui evite d'envoyer les packet dans des ports inutile et reduis les risque de colision.
+Un switch est un périphérique permétant de connecter plusieurs postes/servers dans un même réseau.
+Il permet d'éviter les collisions de packets (par exemple si un appareil tente de communiquer avec un autre alors que celui-ci est déja en communication). Un switch mémorise quel périphéroque est connecté à quel port. Ce qui évite d'envoyer les packet dans des ports inutile et réduis les risques de colisions.
