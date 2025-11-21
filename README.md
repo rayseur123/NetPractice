@@ -106,3 +106,5 @@ Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 ## routeur
 Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de transferer les packets en calculant le trajet optimal.
 Comme pour le switch, le router envoi les packets directement àla bonne cible.
+
+Le routeur est identifiable pour chacun de ses reseau par une ip propre a chaque reseaux. Il se charge ensuite de faire communiquer ses differents reseaux entre eux.
