@@ -107,4 +107,38 @@ Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de transferer les packets en calculant le trajet optimal.
 Comme pour le switch, le router envoi les packets directement àla bonne cible.
 
-Le routeur est identifiable pour chacun de ses reseau par une ip propre àchaque reseaux. Il se charge ensuite de faire communiquer ses differents reseaux entre eux.
+Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaque reseaux. Il se charge ensuite de les faire communiquer entre eux. Attention au chevauchement d'IP, chaque réseaux d'un routeur doit etre different et les plages des un de doivent pas obsorber celle des autres.
+
+### Exemple sans chevauchement
+
+```
+# Réseau 1
+192.168.1.0
+255.255.255.0     (/24)
+
+# Réseau 2
+192.168.2.0
+255.255.255.0     (/24)
+```
+Ici, les deux réseaux sont **complètement séparés** :
+
+- Le premier couvre **192.168.1.0** → **192.168.1.255**
+- Le second couvre **192.168.2.0** → **192.168.2.255**
+
+Le routeur peut donc facilement identifier chaque réseau et faire transiter les paquets entre eux.
+
+### Exemple avec chevauchement
+
+```
+# Réseau A
+192.168.1.0
+255.255.0.0       (/16)
+
+# Réseau B
+192.168.2.0
+255.255.255.0     (/24)
+```
+- Le réseau /16 couvre **192.168.0.0** → **192.168.255.255**
+- Le réseau /24 couvre **192.168.2.0** → **192.168.2.255**
+
+Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a chevauchement, car les deux plages d’adresses se recouvrent.
