@@ -108,3 +108,4 @@ Un routeur est un périphérique permettant la connexion entre plusieurs réseau
 Comme pour le switch, le router envoi les packets directement àla bonne cible.
 
 Le routeur est identifiable pour chacun de ses reseau par une ip propre a chaque reseaux. Il se charge ensuite de faire communiquer ses differents reseaux entre eux.
+<img width="2000" height="1187" alt="image" src="https://github.com/user-attachments/assets/de8f28f4-5769-4788-8ce5-8aadf924fc30" />
