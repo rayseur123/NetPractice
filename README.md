@@ -123,4 +123,5 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 - Le réseau /16 couvre **192.168.0.0** → **192.168.255.255**
 - Le réseau /24 couvre **192.168.2.0** → **192.168.2.255**
 
-Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent.
+Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
+
