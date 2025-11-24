@@ -125,6 +125,10 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
+## BONUS 
+
+### ARP
+
 ### Les ports réseaux
 
 
