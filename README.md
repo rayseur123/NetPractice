@@ -95,7 +95,7 @@ Un switch, quant à lui, est un périphérique permettant également de connecte
 Il permet d’éviter les collisions de paquets en **mémorisant quel périphérique est connecté à quel port**. Cela évite d’envoyer des paquets vers des ports inutiles et réduit les risques de collisions.
 Si deux hôtes cherchent à communiquer avec une même destination, le switch utilise une **table de correspondance** pour gérer l’envoi des données sans risque. 
 
-Un switch retiens les adresses MAC connecté à ses ports et les utilisent pour savoir précisement quel est la source et quel est la destination. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).
+Un switch retiens les adresses MAC connecté à ses ports et les utilisent pour savoir précisement quel est la source et quel est la destination. 
 
 Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau. 
 
@@ -131,10 +131,9 @@ L’ARP est un protocole permettant la communication entre plusieurs périphéri
 
 Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques du réseau, demandant : « À qui appartient l’IP de destination ? »
 
-Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets.
+Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).
 
 <img width="500" height="461" alt="image" src="https://github.com/user-attachments/assets/60c27dea-695b-4a74-9832-013a92a14146" />
-
 
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
