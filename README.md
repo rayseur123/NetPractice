@@ -130,16 +130,26 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 ### ARP
 
 ### Les ports réseaux
-Lorsqu’un ordinateur reçoit une donnée, comment sait-il à quel processus la transmettre ?
-L’adresse IP permet d’identifier un ordinateur ou un périphérique sur le réseau, tandis qu’un port permet d’identifier le processus ou l’application qui doit traiter cette donnée.
+Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
+- L’**adresse IP** identifie un ordinateur ou périphérique sur le réseau
+- Le **port** identifie un processus ou une application sur cet ordinateur.
 
-Lorsqu’un processus a besoin d’envoyer des données, il utilise souvent un **port temporaire** (appelé port éphémère) qui lui est attribué automatiquement par le système. Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau.
+Ainsi, la combinaison **IP + port** permet de diriger correctement chaque paquet vers le bon destinataire sur le réseau.
 
-### Exemple
+#### Ports éphémères
+
+Lorsqu’un processus a besoin d’envoyer des données, il utilise souvent un **port temporaire** (appelé **port éphémère**) qui lui est attribué automatiquement par le système. 
+Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau.
+
+#### Exemple
 
 ```
 192.126.32.72::4365 # 4365 étant le port
 ```
+#### Ports réservés
+
+Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour HTTPS, 25 pour SMTP).
+- Cela permet par exemple de **faciliter** la communication entre applications.
 
 ## NAT
 
