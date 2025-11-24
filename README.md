@@ -149,7 +149,8 @@ Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correcte
 ### Ports réservés
 
 Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour HTTPS, 25 pour SMTP).
-- Cela permet par exemple de **faciliter** la communication entre applications.
+- faciliter la communication entre les applications.
+- faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
 
 ## NAT
 
