@@ -133,6 +133,9 @@ Pour communiquer dans un réseau, un périphérique doit connaître l’adresse 
 
 Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets.
 
+<img width="500" height="461" alt="image" src="https://github.com/user-attachments/assets/60c27dea-695b-4a74-9832-013a92a14146" />
+
+
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
 - L’**adresse IP** identifie un ordinateur ou périphérique sur le réseau
