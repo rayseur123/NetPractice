@@ -1,5 +1,4 @@
 # NetPractice
-
 ## Un réseau ?
 Ici, nous parlons de réseaux TCP/IP, c’est-à-dire un ensemble de périphériques et serveurs interconnectés.
 
@@ -27,7 +26,6 @@ Certaines adresses ne peuvent pas être attribuées à un périphérique, car le
 127.0.0.1
 Localhost / loopback
 ```
-
 127.0.0.1 est une adresse permettant à un appareil de communiquer avec lui-même. Elle est généralement utilisée pour simuler des serveurs sans accès externe.
 
 Ainsi, toutes les IP de la plage 127.0.0.0 à 127.255.255.255 ne sont pas attribuables à un périphérique.
@@ -110,7 +108,6 @@ Comme pour le switch, le router envoi les packets directement àla bonne cible.
 Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaque reseaux. Il se charge ensuite de les faire communiquer entre eux. Attention au chevauchement d'IP, chaque réseaux d'un routeur doit etre different et les plages des un de doivent pas obsorber celle des autres.
 
 ### Exemple avec chevauchement
-
 ```
 # Réseau A
 192.168.1.0
@@ -126,12 +123,10 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
 # Informations bonus 
-
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
 
 ## ARP (Address Resolution Protocol)
-
 L'arp est un protocol permetant la communication entre plusieurs peripherique dans un meme reseau. Il ne s'applique donc qu'a l'echelle du réseau. 
 
 ## Les ports réseaux
@@ -142,17 +137,14 @@ Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel 
 Ainsi, la combinaison **IP + port** permet de diriger correctement chaque paquet vers le bon destinataire sur le réseau.
 
 ### Ports éphémères
-
 Lorsqu’un processus a besoin d’envoyer des données, il utilise souvent un **port temporaire** (appelé **port éphémère**) qui lui est attribué automatiquement par le système. 
 Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau.
 
 ### Exemple
-
 ```
 192.126.32.72::4365 # 4365 étant le port
 ```
 ### Ports réservés
-
 Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour HTTPS, 25 pour SMTP).
 - faciliter la communication entre les applications.
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
