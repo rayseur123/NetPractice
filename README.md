@@ -127,6 +127,7 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 
 # Informations bonus 
 ## Adresse MAC ? Pourquoi faire ?
+L'adresse MAC (adresse physique) est l'adresse reel de votre peripherique. La ou une IP est purement logique, une adresse MAC est associé au composant meme. Elle est necessaire pour lz comunication physique de vos composants. Un cabl ethernrt par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permetant d'identifier un périphérique dans un reseau.
 
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
