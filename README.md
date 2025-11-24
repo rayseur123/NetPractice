@@ -109,24 +109,6 @@ Comme pour le switch, le router envoi les packets directement àla bonne cible.
 
 Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaque reseaux. Il se charge ensuite de les faire communiquer entre eux. Attention au chevauchement d'IP, chaque réseaux d'un routeur doit etre different et les plages des un de doivent pas obsorber celle des autres.
 
-### Exemple sans chevauchement
-
-```
-# Réseau 1
-192.168.1.0
-255.255.255.0     (/24)
-
-# Réseau 2
-192.168.2.0
-255.255.255.0     (/24)
-```
-Ici, les deux réseaux sont **complètement séparés** :
-
-- Le premier couvre **192.168.1.0** → **192.168.1.255**
-- Le second couvre **192.168.2.0** → **192.168.2.255**
-
-Le routeur peut donc facilement identifier chaque réseau et faire transiter les paquets entre eux.
-
 ### Exemple avec chevauchement
 
 ```
