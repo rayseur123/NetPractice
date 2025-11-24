@@ -122,6 +122,9 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
+## Les tables de routages
+
+
 # Informations bonus 
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
