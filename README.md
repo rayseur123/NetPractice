@@ -127,7 +127,12 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 
 # Informations bonus 
 
+## LAN (Local Area Network)
+Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
+
 ## ARP (Address Resolution Protocol)
+
+L'arp est un protocol permetant la communication entre plusieurs peripherique dans un meme reseau. Il ne s'applique donc qu'a l'echelle du réseau. 
 
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
@@ -153,6 +158,8 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
 
 ## NAT (Network address translation)
+
+
 
 // clarifier comment les routeurs trouvent la route optimal
 
