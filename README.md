@@ -101,7 +101,7 @@ Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 
 <img width="593" height="285" alt="nsi_prem_introReseau_4-3919421320" src="https://github.com/user-attachments/assets/30d93616-e416-47e5-b43a-a76af57d2346" />
 
-## routeur
+## Routeur
 Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de transferer les packets en calculant le trajet optimal.
 Comme pour le switch, le router envoi les packets directement àla bonne cible.
 
@@ -127,7 +127,7 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 
 # Informations bonus 
 ## Adresse MAC ? Pourquoi faire ?
-L'adresse MAC (adresse physique) est l'adresse reel de votre peripherique. La ou une IP est purement logique, une adresse MAC est associé au composant meme. Elle est necessaire pour lz comunication physique de vos composants. Un cabl ethernrt par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permetant d'identifier un périphérique dans un reseau.
+L'adresse MAC (adresse physique) est l'adresse réel de votre périphérique. La ou une IP est purement logique, une adresse MAC est associé au composant même. Elle est nécessaire pour la comunication physique de vos composants. Un cable ethernet par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permettant d'identifier un périphérique dans un réseau.
 
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
