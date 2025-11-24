@@ -129,7 +129,7 @@ Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble
 ## ARP (Address Resolution Protocol)
 L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
 
-Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques du réseau, demandant : « À qui appartient l’IP de destination ? »
+Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques (en utilisant le broadcast !) du réseau, demandant : « À qui appartient l’IP de destination ? »
 
 Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).
 
