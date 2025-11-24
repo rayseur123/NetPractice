@@ -127,7 +127,11 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
 
 ## ARP (Address Resolution Protocol)
-L'arp est un protocol permetant la communication entre plusieurs peripherique dans un meme reseau. Il ne s'applique donc qu'a l'echelle du réseau. 
+L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
+
+Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques du réseau, demandant : « À qui appartient l’IP de destination ? »
+
+Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets.
 
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
