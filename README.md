@@ -152,12 +152,19 @@ Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correcte
 ```
 ### Ports réservés
 Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour HTTPS, 25 pour SMTP).
+
 - faciliter la communication entre les applications.
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
 
 ## NAT (Network address translation)
+Avec toutes ces explications, un problème se pose : comment les périphériques d’un réseau peuvent-ils communiquer avec Internet alors qu’ils partagent tous le même routeur et donc la même **IP publique** ? C’est ici que le protocole **NAT** intervient.
 
+Lorsque votre ordinateur envoie des données sur Internet, il utilise **son IP** privée et un **port source**. Ces données passent par le routeur, qui :
 
+- Remplace votre **IP privée** par son **IP publique**.
+- Attribue un **port temporaire** pour remplacer celui de votre machine, afin de pouvoir différencier plusieurs connexions simultanées.
+
+Le routeur garde une **table de correspondance NAT** associant chaque port interne à son port externe. Cela lui permet de **rediriger correctement les réponses entrantes vers le bon périphérique du réseau local**.
 
 // clarifier comment les routeurs trouvent la route optimal
 
