@@ -125,10 +125,23 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
-## BONUS 
+## Informations **bonus** 
 
 ### ARP
 
 ### Les ports réseaux
+Lorsqu’un ordinateur reçoit une donnée, comment sait-il à quel processus la transmettre ?
+L’adresse IP permet d’identifier un ordinateur ou un périphérique sur le réseau, tandis qu’un port permet d’identifier le processus ou l’application qui doit traiter cette donnée.
 
+Lorsqu’un processus a besoin d’envoyer des données, il utilise souvent un **port temporaire** (appelé port éphémère) qui lui est attribué automatiquement par le système. Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau.
+
+### Exemple
+
+```
+192.126.32.72::4365 # 4365 étant le port
+```
+
+## NAT
+
+// clarifier comment les routeurs trouvent la route optimal
 
