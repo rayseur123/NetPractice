@@ -127,7 +127,7 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 
 # Informations bonus 
 
-## ARP
+## ARP (Address Resolution Protocol)
 
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
@@ -152,7 +152,7 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 - faciliter la communication entre les applications.
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
 
-## NAT
+## NAT (Network address translation)
 
 // clarifier comment les routeurs trouvent la route optimal
 
