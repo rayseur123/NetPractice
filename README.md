@@ -172,5 +172,4 @@ Lorsque votre ordinateur envoie des données sur Internet, il utilise **son IP**
 Le routeur garde une **table de correspondance NAT** associant chaque port interne à son port externe. Cela lui permet de **rediriger correctement les réponses entrantes vers le bon périphérique du réseau local**.
 
 *Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
-// clarifier comment les routeurs trouvent la route optimal
 
