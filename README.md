@@ -197,8 +197,8 @@ Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel 
 Ainsi, la combinaison **IP + port** permet de diriger correctement chaque paquet vers le bon destinataire sur le réseau.
 
 ### Ports éphémères
-Lorsqu’un processus a besoin d’envoyer des données, il utilise souvent un **port temporaire** (appelé **port éphémère**) qui lui est attribué automatiquement par le système. 
-Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau.
+Lorsqu’un processus a besoin d’envoyer de communiquer avec un péripherique exterieur, il utilise un **port temporaire** (appelé **port éphémère**) qui lui est attribué automatiquement par le système. 
+Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correctement la communication entre les différents processus et périphériques sur le réseau via le **NAT**.
 
 ### Exemple
 ```
@@ -213,6 +213,7 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un foyer.
 
+*Pour en savoir plus sur les [**LAN** / **CAN** / **MAN** / **WAN***](https://www.computernetworkingnotes.com/networking-tutorials/lan-can-man-and-wan-networks-explained.html)
 ## ARP (Address Resolution Protocol)
 L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
 
