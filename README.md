@@ -151,7 +151,7 @@ Si un paquet destiné à l’adresse 192.168.1.45 arrive :
 - La route 192.168.1.0/24 est la plus spécifique (masque plus long).
 - Le paquet sera donc envoyé via eth0.
 
-Certaines routes particulères à connaitre :
+Une route particulère à connaitre :
 
 - **Route par défaut** : Cette route est représentée par l’adresse IP 0.0.0.0 et le masque 0.0.0.0. Elle est utilisée si aucune autre route spécifique ne correspond à l’adresse de destination.
 // expliquer comment choisir quel chemin emprimter
