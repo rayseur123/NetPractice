@@ -56,7 +56,7 @@ Le **broadcast** permet de communiquer avec tous les périphérique du réseau.
 
 ### Exemple
 ```
-192.12.102.0 # adresse du reseau 
+192.12.102.0 # adresse du réseau 
 255.255.255.0 # masque 
 
 192.12.102.255 # broadcast
@@ -102,10 +102,10 @@ Un switch permet donc de connecter plusieurs hôtes d'un **même** réseau.
 <img width="593" height="285" alt="nsi_prem_introReseau_4-3919421320" src="https://github.com/user-attachments/assets/30d93616-e416-47e5-b43a-a76af57d2346" />
 
 ## Routeur
-Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de transferer les packets en calculant le trajet optimal.
-Comme pour le switch, le router envoi les packets directement àla bonne cible.
+Un routeur est un périphérique permettant la connexion entre plusieurs réseaux. Il se charge de **transférer les paquets** en calculant le trajet optimal.
+Comme pour le switch, le **routeur envoie les paquets directement à la bonne cible**.
 
-Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaque reseaux. Il se charge ensuite de les faire communiquer entre eux. Attention au chevauchement d'IP, chaque réseaux d'un routeur doit etre different et les plages des un de doivent pas obsorber celle des autres.
+Le routeur est identifiable pour chacun de ses réseaux par une IP propre à chaque réseau. Il se charge ensuite de les faire communiquer entre eux. Attention au chevauchement d'IP : chaque réseau d'un routeur doit être différent et les plages de l'un ne doivent pas absorber celles des autres.
 
 ### Exemple avec chevauchement
 ```
@@ -151,7 +151,7 @@ Si un paquet destiné à l’adresse 192.168.1.45 arrive :
 - La route 192.168.1.0/24 est la plus spécifique (masque plus long).
 - Le paquet sera donc envoyé via eth0.
 
-Une route particulère à connaitre :
+Une route particulière à connaitre :
 
 - **Route par défaut** : Cette route est représentée par l’adresse IP 0.0.0.0 et le masque 0.0.0.0. Elle est utilisée si aucune autre route spécifique ne correspond à l’adresse de destination.
 // expliquer comment choisir quel chemin emprimter
@@ -171,23 +171,23 @@ Ce type de table est utile dans les infrastructures réseau de grande taille, ca
 
 ## Internet et les réseaux
 
-Certaine IP ne sont pas authoriser pour l'ip publique de votre routeur. 
+Certaine IP ne sont pas autorisé pour l'IP publique de votre routeur. 
 
-IP réservé pour les réseaux privées :
+IP réservé pour les réseaux **privées** :
 - 10.0.0.0 – 10.255.255.255 (/8)
 - 172.16.0.0 – 172.31.255.255 (/12)
 - 192.168.0.0 – 192.168.255.255 (/16)
 
-IP looback : 
+IP **loopack** : 
  - 127.0.0.0 – 127.255.255.255
-IP broadcast :
+IP **broadcast** :
  - 255.255.255.255
 
 ainsi que toutes les adresses réservé par [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority).
 
 # Informations bonus 
 ## Adresse MAC ? Pourquoi faire ?
-L'adresse MAC (adresse physique) est l'adresse réel de votre périphérique. La ou une IP est purement logique, une adresse MAC est associé au composant même. Elle est nécessaire pour la comunication physique de vos composants. Un cable ethernet par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permettant d'identifier un périphérique dans un réseau.
+L'adresse MAC (adresse physique) est l'adresse réel de votre périphérique. La ou une IP est purement logique, une adresse MAC est associé au composant même. Elle est nécessaire pour la communication physique de vos composants. Un cable ethernet par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permettant d'identifier un périphérique dans un réseau.
 
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
