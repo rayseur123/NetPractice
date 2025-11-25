@@ -123,7 +123,7 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
 ## Les tables de routages
-Une table de routage est une structure de données permettant d’indiquer comment les paquets doivent être acheminés en fonction de leur destination. Pour cela, la table de routage contient les éléments suivants:
+Une table de routage est une structure de données constitué d'un ensemble de routes permettant d’indiquer comment les paquets doivent être acheminés en fonction de leur destination. Pour cela, la table de routage contient les éléments suivants:
 
 - **Destination** : L’adresse IP représentant le réseau de destination.
 - **Masque** : Le masque de sous-réseau permettant de préciser la portée du paquet dans ce réseau.
@@ -132,18 +132,40 @@ Une table de routage est une structure de données permettant d’indiquer comme
 
 <img width="900" height="581" alt="Screenshot from 2025-11-25 12-26-41" src="https://github.com/user-attachments/assets/f2ec525d-686e-46f8-adcd-32f238452638" />
 
+### Comment les routes sont-elles choisies ?
+La table de routage contient un ensemble de routes. Lorsqu’un paquet arrive, le routeur compare son adresse IP de destination avec les destinations listées dans la table.
+- Si une seule route correspond, le paquet est envoyé via cette route.
+- Si plusieurs routes correspondent, la route la plus spécifique est choisie, c’est-à-dire celle dont le masque de sous-réseau est le plus précis (le plus long).
+
+#### Exemple :
+
+```
+| Destination | Masque        | Passerelle  | Interface |
+| ----------- | ------------- | ----------- | --------- |
+| 192.168.1.0 | 255.255.255.0 | 192.168.1.1 | eth0      |
+| 192.168.0.0 | 255.255.0.0   | 192.168.0.1 | eth1      |
+
+```
+Si un paquet destiné à l’adresse 192.168.1.45 arrive :
+- Les deux routes correspondent : 192.168.1.0/24 et 192.168.0.0/16.
+- La route 192.168.1.0/24 est la plus spécifique (masque plus long).
+- Le paquet sera donc envoyé via eth0.
+
+Certaines routes particulères à connaitre :
+
+- **Route par défaut** : Cette route est représentée par l’adresse IP 0.0.0.0 et le masque 0.0.0.0. Elle est utilisée si aucune autre route spécifique ne correspond à l’adresse de destination.
 // expliquer comment choisir quel chemin emprimter
 
 ### Types de tables de routages
 #### Table de routage statique
-Une table de routage statique est configurée manuellement et n’adapte pas ses routes en fonction des changements du réseau. Elle est pratique dans les petits réseaux et permet d’acheminer simplement et efficacement les paquets vers leur destination.
+Une table de routage statique est configurée manuellement et n’adapte pas ses routes en fonction des changements du réseau. Elle est pratique pour les petits réseaux et permet d’acheminer les paquets vers leur destination de manière simple et fiable.
 
 #### Table de routage dynamique
-Une table de routage dynamique s’adapte automatiquement grâce à un paramètre supplémentaire :
+Une table de routage dynamique s’adapte automatiquement grâce à des informations supplémentaires :
 
-- **Metric** : Une valeur représentant le coût d’acheminement jusqu’à la destination, permettant de choisir la route la plus adaptée selon l’état du trafic.
+- **Metric** : Valeur représentant le coût d’acheminement jusqu’à la destination, utilisée pour choisir la route la plus efficace selon l’état du réseau.
 
-Ce type de table offre des avantages en termes de performance, mais n’est réellement utile que dans des infrastructures réseau de grande taille, en plus d’être plus complexe à mettre en place et à maintenir.
+Ce type de table est utile dans les infrastructures réseau de grande taille, car il optimise le routage en fonction du trafic et des pannes éventuelles, mais il est plus complexe à configurer et à maintenir.
 
 *Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
 
