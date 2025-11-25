@@ -171,6 +171,19 @@ Ce type de table est utile dans les infrastructures réseau de grande taille, ca
 
 ## Internet et les réseaux
 
+Certaine IP ne sont pas authoriser pour l'ip publique de votre routeur. 
+
+IP réservé pour les réseaux privées :
+- 10.0.0.0 – 10.255.255.255 (/8)
+- 172.16.0.0 – 172.31.255.255 (/12)
+- 192.168.0.0 – 192.168.255.255 (/16)
+
+IP looback : 
+ - 127.0.0.0 – 127.255.255.255
+IP broadcast :
+ - 255.255.255.255
+
+ainsi que toutes les adresses réservé par [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority).
 
 # Informations bonus 
 ## Adresse MAC ? Pourquoi faire ?
