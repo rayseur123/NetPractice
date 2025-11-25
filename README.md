@@ -130,7 +130,7 @@ Une table de routage est une structure de données permettant d’indiquer comme
 - **Passerelle** : Le routeur passerelle nécessaire pour atteindre ce réseau.
 - **Interface** : L’interface réseau par laquelle le paquet sera envoyé.
 
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/7216a14d-04df-40c3-b610-4389758a9377" />
+<img width="900" height="581" alt="Screenshot from 2025-11-25 12-26-41" src="https://github.com/user-attachments/assets/f2ec525d-686e-46f8-adcd-32f238452638" />
 
 // expliquer comment choisir quel chemin emprimter
 
