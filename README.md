@@ -213,7 +213,7 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 ## LAN (Local Area Network)
 Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un foyer.
 
-*Pour en savoir plus sur les [**LAN** / **CAN** / **MAN** / **WAN***](https://www.computernetworkingnotes.com/networking-tutorials/lan-can-man-and-wan-networks-explained.html)
+*Pour en savoir plus sur les [**LAN** / **CAN** / **MAN** / **WAN**](https://www.computernetworkingnotes.com/networking-tutorials/lan-can-man-and-wan-networks-explained.html)*
 ## ARP (Address Resolution Protocol)
 L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
 
