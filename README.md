@@ -123,7 +123,28 @@ Le routeur est identifiable pour chacun de ses reseaux par une IP propre à chaq
 Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On dit qu’il y a **chevauchement**, car les deux plages d’adresses se recouvrent. Le routeur ne peut donc pas différencier ces deux réseaux correctement.
 
 ## Les tables de routages
+Une table de routage est une structure de données permettant d’indiquer comment les paquets doivent être acheminés en fonction de leur destination. Pour cela, la table de routage contient les éléments suivants:
 
+- **Destination** : L’adresse IP représentant le réseau de destination.
+- **Masque** : Le masque de sous-réseau permettant de préciser la portée du paquet dans ce réseau.
+- **Passerelle** : Le routeur passerelle nécessaire pour atteindre ce réseau.
+- **Interface** : L’interface réseau par laquelle le paquet sera envoyé.
+
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/7216a14d-04df-40c3-b610-4389758a9377" />
+
+// expliquer comment choisir quel chemin emprimter
+
+### Types de tables de routages
+#### Table de routage statique
+Une table de routage statique est configurée manuellement et n’adapte pas ses routes en fonction des changements du réseau. Elle est pratique dans les petits réseaux et permet d’acheminer simplement et efficacement les paquets vers leur destination.
+
+#### Table de routage dynamique
+Une table de routage dynamique s’adapte automatiquement grâce à un paramètre supplémentaire :
+
+- **Metric** : Une valeur représentant le coût d’acheminement jusqu’à la destination, permettant de choisir la route la plus adaptée selon l’état du trafic.
+
+Ce type de table offre des avantages en termes de performance, mais n’est réellement utile que dans des infrastructures réseau de grande taille, en plus d’être plus complexe à mettre en place et à maintenir.
+*Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
 
 # Informations bonus 
 ## Adresse MAC ? Pourquoi faire ?
@@ -172,7 +193,5 @@ Lorsque votre ordinateur envoie des données sur Internet, il utilise **son IP**
 
 Le routeur garde une **table de correspondance NAT** associant chaque port interne à son port externe. Cela lui permet de **rediriger correctement les réponses entrantes vers le bon périphérique du réseau local**.
 
-# source
-
-*Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
+# Source
 
