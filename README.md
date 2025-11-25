@@ -233,5 +233,8 @@ Lorsque votre ordinateur envoie des données sur Internet, il utilise **son IP**
 
 Le routeur garde une **table de correspondance NAT** associant chaque port interne à son port externe. Cela lui permet de **rediriger correctement les réponses entrantes vers le bon périphérique du réseau local**.
 
+## TCP vs UDP
+
+
 # Source
 
