@@ -239,6 +239,4 @@ Ces deux protocoles permettent de gérer la transmission de paquets entre les p�
 - **TCP/IP** : La première partie de ce protocole repose sur le [**handshaking**](https://www.geeksforgeeks.org/computer-networks/tcp-3-way-handshake-process/) (ou « poignée de main » en français). Cela signifie que lorsque deux périphériques souhaitent communiquer, ils échangent plusieurs paquets pour s’assurer que la communication est bien établie. Une fois la connexion vérifiée, le périphérique source envoie une suite de paquets numérotés dans l’ordre. Si certains paquets sont manquants, le périphérique de destination en informe la source, qui renvoie alors les paquets manquants. Comme prévu, la qualité de transfert se paye en vitesse.
 
 - **UDP/IP** : Ce protocole est bien plus simple à comprendre. Il n'y a pas de handshaking n'y de correction des packets perdus. Le périphérique source se contente d'envoyer les packets au périphérique de destination. Si certains packets sont perdus, alors ils le resteront. Comme prévu, la vitesse de transfert se paye en qualité.
-  
-# Source
 
