@@ -88,7 +88,7 @@ La plage de notre réseau est donc entre 160 à 191 inclu ! Il ne reste plus qu'
 Les adresses utilisables sont donc :
 - 192.12.102.160 à 192.12.102.191 inclus
 
-## Les Switchs
+## Les Switchs (commutateur)
 Avant de comprendre l’intérêt d’un switch, il faut savoir comment les réseaux fonctionnaient auparavant. Pour connecter plusieurs périphériques entre eux, nous utilisions des hubs. Les hubs se contentent de **partager les paquets reçus d’un hôte à tous les autres hôtes connectés**. Cela pouvait provoquer des **collisions de paquets** (par exemple, si deux hôtes souhaitaient communiquer avec une même destination), ce qui pouvait entraîner des **pertes de données**.
 
 Un switch, quant à lui, est un périphérique permettant également de connecter plusieurs postes ou serveurs dans un même réseau.
