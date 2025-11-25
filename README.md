@@ -144,6 +144,7 @@ Une table de routage dynamique s’adapte automatiquement grâce à un paramètr
 - **Metric** : Une valeur représentant le coût d’acheminement jusqu’à la destination, permettant de choisir la route la plus adaptée selon l’état du trafic.
 
 Ce type de table offre des avantages en termes de performance, mais n’est réellement utile que dans des infrastructures réseau de grande taille, en plus d’être plus complexe à mettre en place et à maintenir.
+
 *Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
 
 # Informations bonus 
