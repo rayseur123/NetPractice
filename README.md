@@ -182,7 +182,7 @@ Pour communiquer dans un réseau, un périphérique doit connaître l’adresse 
 
 Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets.
 
-*Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).*
+*Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/)*
 
 ## NAT (Network address translation)
 Avec toutes ces explications, un problème se pose : comment les périphériques d’un réseau peuvent-ils communiquer avec Internet alors qu’ils partagent tous le même routeur et donc la même **IP publique** ? C’est ici que le protocole **NAT** intervient.
