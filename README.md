@@ -23,7 +23,7 @@ Chaque IP doit être unique dans son réseau pour pouvoir communiquer avec ses p
 Certaines adresses ne peuvent pas être attribuées à un périphérique, car leur usage est déjà réservé.
 
 ```
-127.0.0.1
+127.0.0.0 - 127.255.255.255 
 Localhost / loopback
 ```
 127.0.0.1 est une adresse permettant à un appareil de communiquer avec lui-même. Elle est généralement utilisée pour simuler des serveurs sans accès externe.
@@ -31,7 +31,7 @@ Localhost / loopback
 Ainsi, toutes les IP de la plage 127.0.0.0 à 127.255.255.255 ne sont pas attribuables à un périphérique.
 
 ## Masque de sous réseaux
-Un masque est une suite de 4 octets permettant de définir une plage réseau, c’est-à-dire le nombre de périphériques possibles dans un même sous-réseau.
+Un masque est une suite de 4 octets permettant de définir une **plage** réseau, c’est-à-dire le nombre de périphériques possibles dans un même sous-réseau.
 Le masque se divise en deux parties : la partie réseau et la partie hôte.
 
 Pour comprendre cela, il faut se pencher sur le binaire :
