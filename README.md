@@ -1,6 +1,6 @@
 # NetPractice
 ## Un réseau ?
-Ici, nous parlons de réseaux TCP/IP, c’est-à-dire un ensemble de périphériques et serveurs interconnectés.
+Ici, nous parlons de réseaux IP, c’est-à-dire un ensemble de périphériques et serveurs interconnectés.
 
 ## Un sous-réseau ?
 Un **sous-réseau** est une partie plus interne d’un réseau plus global.
