@@ -125,7 +125,7 @@ Le petit réseau (/24) est complètement inclus dans le grand réseau (/16). On 
 ## Les tables de routages
 Une table de routage est une structure de données constitué d'un ensemble de routes permettant d’indiquer comment les paquets doivent être acheminés en fonction de leur destination. Pour cela, la table de routage contient les éléments suivants:
 
-- **Destination** : L’adresse IP représentant le réseau de destination.
+- **Destination** : L’adresse IP représentant l'ensemble des destinations possible.
 - **Masque** : Le masque de sous-réseau permettant de préciser la portée du paquet dans ce réseau.
 - **Passerelle** : Le routeur passerelle nécessaire pour atteindre ce réseau.
 - **Interface** : L’interface réseau par laquelle le paquet sera envoyé.
@@ -174,9 +174,9 @@ Ce type de table est utile dans les infrastructures réseau de grande taille, ca
 Certaine IP ne sont pas autorisé pour l'IP publique de votre routeur. 
 
 IP réservé pour les réseaux **privées** :
-- 10.0.0.0 – 10.255.255.255 (/8)
-- 172.16.0.0 – 172.31.255.255 (/12)
-- 192.168.0.0 – 192.168.255.255 (/16)
+- 10.0.0.0 – 10.255.255.255
+- 172.16.0.0 – 172.31.255.255
+- 192.168.0.0 – 192.168.255.255
 
 IP **loopack** : 
  - 127.0.0.0 – 127.255.255.255
@@ -202,7 +202,7 @@ Ce port, combiné à l’adresse IP de l’ordinateur, permet de gérer correcte
 
 ### Exemple
 ```
-192.126.32.72::4365 # 4365 étant le port
+192.126.32.72:4365 # 4365 étant le port
 ```
 ### Ports réservés
 Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour HTTPS, 25 pour SMTP).
@@ -211,7 +211,7 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
 
 ## LAN (Local Area Network)
-Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
+Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un foyer.
 
 ## ARP (Address Resolution Protocol)
 L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
