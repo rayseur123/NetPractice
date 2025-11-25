@@ -150,16 +150,6 @@ Ce type de table offre des avantages en termes de performance, mais n’est rée
 ## Adresse MAC ? Pourquoi faire ?
 L'adresse MAC (adresse physique) est l'adresse réel de votre périphérique. La ou une IP est purement logique, une adresse MAC est associé au composant même. Elle est nécessaire pour la comunication physique de vos composants. Un cable ethernet par exemple, ne connais que l'adresse MAC. L'ip n'est donc qu'une surcouche permettant d'identifier un périphérique dans un réseau.
 
-## LAN (Local Area Network)
-Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
-
-## ARP (Address Resolution Protocol)
-L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
-
-Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques (en utilisant le broadcast !) du réseau, demandant : « À qui appartient l’IP de destination ? »
-
-Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).
-
 ## Les ports réseaux
 Lorsqu’un ordinateur reçoit des données sur le réseau, il doit savoir quel processus ou application doit traiter ces données.
 - L’**adresse IP** identifie un ordinateur ou périphérique sur le réseau
@@ -180,6 +170,16 @@ Certains ports sont **réservés ou standardisés** (ex. 80 pour HTTP, 443 pour 
 
 - faciliter la communication entre les applications.
 - faciliter la gestion de la sécurité, car les ports réservés étant très courants, les standardiser permet de mieux contrôler et configurer leur utilisation.
+
+## LAN (Local Area Network)
+Un réseau LAN désigne simplement un réseau local. C’est-à-dire un ensemble de périphériques qui communiquent entre eux sans utiliser Internet comme intermédiaire, par exemple le réseau d’un campus ou d’un foyer.
+
+## ARP (Address Resolution Protocol)
+L’ARP est un protocole permettant la communication entre plusieurs périphériques sur un même réseau local. Il ne s’applique donc qu’à l’échelle du réseau local.
+
+Pour communiquer dans un réseau, un périphérique doit connaître l’adresse MAC (adresse physique) du périphérique cible. Pour obtenir cette adresse, l’ordinateur source envoie une requête ARP à tous les périphériques (en utilisant le broadcast !) du réseau, demandant : « À qui appartient l’IP de destination ? »
+
+Le périphérique correspondant répond alors en renvoyant sa MAC, ce qui permet à l’ordinateur source d’envoyer correctement les paquets. Pour en savoir plus : [ARP](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/).
 
 ## NAT (Network address translation)
 Avec toutes ces explications, un problème se pose : comment les périphériques d’un réseau peuvent-ils communiquer avec Internet alors qu’ils partagent tous le même routeur et donc la même **IP publique** ? C’est ici que le protocole **NAT** intervient.
