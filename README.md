@@ -32,9 +32,8 @@ Ainsi, toutes les IP de la plage 127.0.0.0 à 127.255.255.255 ne sont pas attrib
 
 ## Masque de sous réseaux
 Un masque est une suite de 4 octets permettant de définir une **plage** réseau, c’est-à-dire le nombre de périphériques possibles dans un même sous-réseau.
-Le masque se divise en deux parties : la partie réseau et la partie hôte.
+Le masque se divise en deux parties  la partie réseau et la partie hôte.
 
-Pour comprendre cela, il faut se pencher sur le binaire :
 Pour comprendre cette partie il faudra se pencher sur le binaire.
 
 - **la partie réseau** → bits à 1
@@ -47,7 +46,7 @@ Pour comprendre cette partie il faudra se pencher sur le binaire.
 ```
 Ici, les trois premiers octets sont attribués au réseau, tandis que les bits à 0 représentent la plage, c’est-à-dire le nombre de périphériques possibles dans ce même réseau.
 
-À retenir :
+À retenir 
 
 - La **première adresse** (tous les bits hôtes à 0) représente le réseau.
 - La **dernière adresse** (tous les bits hôtes à 1) est l’adresse de broadcast.
