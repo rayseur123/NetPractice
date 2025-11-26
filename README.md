@@ -166,7 +166,7 @@ Une table de routage dynamique s’adapte automatiquement grâce à des informat
 
 Ce type de table est utile dans les infrastructures réseau de grande taille, car il optimise le routage en fonction du trafic et des pannes éventuelles, mais il est plus complexe à configurer et à maintenir.
 
-***Attention*** Le routeur vérifie d’abord si le paquet correspond à l’un de ses réseaux avant de consulter sa table de routage ! La superposition des masques peut donc s’appliquer même si plusieurs routeurs séparent deux réseaux.
+***Attention*** ! Le routeur vérifie d’abord si le paquet correspond à l’un de ses réseaux avant de consulter sa table de routage ! La superposition des masques peut donc s’appliquer même si plusieurs routeurs séparent deux réseaux.
 
 *Pour savoir comment les routeurs trouvent la route optimal : [RIP](https://fr.wikipedia.org/wiki/Routing_Information_Protocol), [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First), [BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)*
 
