@@ -52,7 +52,6 @@ Ici, les trois premiers octets sont attribués au réseau, tandis que les bits �
 - La **dernière adresse** (tous les bits hôtes à 1) est l’adresse de broadcast.
 
 Pour connaitre l'adresse d'un réseau il suffit donc d'appliquer un operateur ET entre les bits du masque et les bits d'une adresse IOP.
-
 ### Exemple
 ```
 11000000 00111111 00001100 01100111 # 192.63.12.103 : adresse IP
